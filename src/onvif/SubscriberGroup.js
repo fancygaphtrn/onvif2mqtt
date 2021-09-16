@@ -64,7 +64,7 @@ export default class SubscriberGroup {
     const simpleItem = event.message.message.data.simpleItem;
     const eventValue = this._simpleItemsToObject(simpleItem instanceof(Array) ? simpleItem : [simpleItem]);
 
-    this.logger.trace('ONVIF received', { subscriberName, eventType, eventValue });
+    this.logger.info('ONVIF received', { subscriberName, eventType, eventValue });
 
     this.callbacks[callbackType](subscriberName, eventValue);
   };
