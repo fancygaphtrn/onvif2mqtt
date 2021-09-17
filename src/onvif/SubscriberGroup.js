@@ -9,11 +9,17 @@ export const CALLBACK_TYPES = {
   motion: 'onMotionDetected',
 };
 
+/*
 const EVENTS = {
   'RuleEngine/CellMotionDetector/Motion': CALLBACK_TYPES.motion,
   'RuleEngine/CellMotionDetector/Motion//.': CALLBACK_TYPES.motion,
   'VideoSoure/MotionAlarm': CALLBACK_TYPES.motion,
   'VideoSource/MotionAlarm': CALLBACK_TYPES.motion
+};
+*/
+
+const EVENTS = {
+  'RuleEngine/CellMotionDetector/Motion': CALLBACK_TYPES.motion
 };
 
 const DEFAULT_CALLBACKS = {
